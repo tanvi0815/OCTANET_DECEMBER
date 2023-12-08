@@ -1,0 +1,550 @@
+<html>
+
+<head>
+    <style>
+        body {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .header_title {
+            padding: 1% 0% 1% 0%;
+            background-color: rgb(18 141 255);
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+            color: white
+        }
+
+        .header_auth-buttons {
+            position: relative;
+            width: 29%;
+            float: right;
+        }
+
+        .header_auth-buttons__login {
+            width: 50%;
+            float: left;
+            font-size: large;
+            font-weight: normal;
+        }
+
+        .header_auth-buttons__signup {
+            width: 50%;
+            float: left;
+            font-size: large;
+            font-weight: normal;
+        }
+
+        .intro-heading {
+            width: 100%;
+            padding-top: 60px;
+            padding-bottom: 100;
+        }
+
+        .intro-heading_base {
+            text-align: center;
+            font-size: xxx-large;
+        }
+
+        .intro-heading_animated {
+            width: 100%;
+            font-size: x-large;
+        }
+
+        .window-animated-item {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .intro-heading_animated__imag {
+            width: 100%;
+            font-size: x-large;
+        }
+
+        .window-animated-imag-xp {
+            /*display: block;*/
+            background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.traveloffpath.com%2Fwp-content%2Fuploads%2F2021%2F04%2FHow-the-Rise-of-Experience-Tourism-is-Changing-Travel-3.jpg&f=1&nofb=1&ipt=e152aec75206fc64b3a795aa999fba4f812686dc23e48311d6c778d03f406e2c&ipo=images');
+            float: left;
+            width: 21%;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0px solid rgb(0, 0, 0);
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0% 2% 0% 2%;
+            box-shadow: 2px 3px #3636368c;
+        }
+
+        .window-animated-imag-xp:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+
+        .window-animated-imag-av {
+            /*display: block;*/
+            background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod.s3.amazonaws.com%2Fimages%2F1amalfi3-copy-1548779494.jpg%3Fcrop%3D1.00xw%3A0.753xh%3B0%2C0.188xh%26resize%3D1200%3A*&f=1&nofb=1&ipt=c44bd32d32696c311f08fa8df3f59dd140933f2609ad971e71f1c8871934bec5&ipo=images');
+            float: left;
+            width: 21%;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0px solid rgb(0, 0, 0);
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0% 2% 0% 2%;
+            box-shadow: 2px 3px #3636368c;
+        }
+
+        .window-animated-imag-av:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .window-animated-imag-sp {
+            /*display: block;*/
+            background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.BfSdJ78VGUIyCpwRm0yJ7AHaEO%26pid%3DApi&f=1&ipt=39b434633e62e47e55afbb48016d07b78eead67c9d54ff0738b13e91cf5cf123&ipo=images');
+            float: left;
+            width: 21%;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0px solid rgb(0, 0, 0);
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0% 2% 0% 2%;
+            box-shadow: 2px 3px #3636368c;
+        }
+
+        .window-animated-imag-sp:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .window-animated-imag-th {
+            /*display: block;*/
+            background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Cq376LsO_eAfWqhLi0y5OgHaEK%26pid%3DApi&f=1&ipt=63e990695ff3146444925ede2869a3474624801123d363853cc38c3e9bb01ab8&ipo=images');
+            float: left;
+            width: 21%;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0px solid rgb(0, 0, 0);
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0% 2% 0% 2%;
+            box-shadow: 2px 3px #3636368c;
+        }
+
+        .window-animated-imag-th:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .search {
+            padding: 164px 0px 0px 20;
+            width: 100%;
+            text-align: center;
+        }
+
+        input {
+            padding: 16px;
+            width: 618px;
+            border-radius: 18px;
+        }
+
+        button {
+            padding: 16px;
+            width: 90px;
+            border-radius: 22px;
+            background-color: #0daf12;
+            color: white
+        }
+
+        .trending {
+            width: 100%;
+        }
+
+        .trending_lft {
+            -webkit-filter: brightness(100%);
+            margin: 3%;
+            width: 36%;
+            float: left;
+            background-image: url('https://ui-assets-gc.thrillophilia.com/assets/homepage/luxury-experiences/Gloab@1x-25e3d4da3a44941d140010e538c894082554c455c0e9ef83bb0166d4d60f0aac.jpg');
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            /* border: 1px solid rgb(0, 0, 0); */
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 299px;
+            font-size: x-large;
+            font-style: italic;
+            color: white;
+            font-weight: bold;
+        }
+
+        .trending_lft:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .trending_right {
+            width: 60%;
+            float: left;
+            margin: 2%;
+        }
+
+        .trending_right_itm_1 {
+            background-image: url('https://media1.thrillophilia.com/filestore/w38wenfg1ycrhni0fpmx69x9etl8_Artboard%205_.png?w=340&dpr=2');
+            width: 31%;
+            height: 150px;
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            /* border: 1px solid rgb(0, 0, 0); */
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .trending_right_itm_1:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .trending_right_itm_2 {
+            background-image: url('https://media1.thrillophilia.com/filestore/ateroxiztd7wty5y68qac72k3oma_Exotic%20escape%20to%20Kerala.jpg?w=340&dpr=2');
+            width: 31%;
+            height: 150px;
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            /* border: 1px solid rgb(0, 0, 0); */
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .trending_right_itm_2:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .trending_right_itm_2_9 {
+            background-image: url('https://media1.thrillophilia.com/filestore/kpmadogka8p4p6was431g52sen4e_shutterstock_1062816467.jpg?w=340&dpr=2');
+            width: 31%;
+            height: 150px;
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            /* border: 1px solid rgb(0, 0, 0); */
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .trending_right_itm_2_9:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .trending_right_itm_4 {
+            background-image: url('https://media1.thrillophilia.com/filestore/3hf7pwavjbf47og3aniga5hnctzc_tosh1.jpg?w=305&h=230&dpr=1.0');
+            width: 31%;
+            height: 150px;
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            /* border: 1px solid rgb(0, 0, 0); */
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .trending_right_itm_4:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .trending_right_itm_5 {
+            background-image: url('https://media1.thrillophilia.com/filestore/f60t6r20g4rcgv67cl3hq8i5hlmx_hb3judm61kofl55bpeak99zvtgze_shutterstock_1036002985.jpg?w=340&dpr=2');
+            width: 31%;
+            height: 150px;
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            /* border: 1px solid rgb(0, 0, 0); */
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .trending_right_itm_5:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .trending_right_itm_6 {
+            background-image: url('https://media1.thrillophilia.com/filestore/mspxuaj2rkl4kn61qiison1hh7im_ndrkvr49svb0s1xve28dzmozahs5_IMG20230321183838_01-01.jpg?w=340&dpr=2');
+            width: 31%;
+            height: 150px;
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            /* border: 1px solid rgb(0, 0, 0); */
+            border-radius: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .trending_right_itm_6:hover {
+            -webkit-filter: brightness(70%);
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .footer {
+            display: block;
+            width: 100%;
+        }
+
+        .about_h {
+            text-align: center;
+            font: 2em sans-serif;
+        }
+
+        .about_b {
+            text-align: center;
+            font: 1em sans-serif;
+        }
+
+        .footer {
+            background-color: gray;
+            padding: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_title">
+            Welcome to Tripsy, India
+            <div class="header_auth-buttons">
+                <div class="header_auth-buttons__login">
+                    Login
+                </div>
+                <div class="header_auth-buttons__signup">
+                    Sign up
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro-heading">
+        <div class="intro-heading_base">It's time for new</div>
+        <div class="intro-heading_animated">
+            <div class="intro-heading_animated__window">
+                <div class="window-animated-item">Experiences</div>
+                <div class="window-animated-item">Adventures</div>
+                <div class="window-animated-item">Escapes</div>
+                <div class="window-animated-item">Thrills</div>
+            </div>
+            <div class="intro-heading_animated__imag">
+                <div class="window-animated-imag-xp">
+                </div>
+                <div class="window-animated-imag-av">
+                </div>
+                <div class="window-animated-imag-sp">
+                </div>
+                <div class="window-animated-imag-th">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <div class="search__container">
+            <input type="text" placeholder="Search Destinations, Tours, Activities" />
+            <button type="submit"> Search
+            </button>
+        </div>
+    </div>
+    <div class="trending">
+        <div class="trending_lft">
+            <div class="luxury-experiences__grid-item-title">Find Best Things to Do</div>
+        </div>
+        <div class="trending_right">
+            
+            <div class="trending_right_itm_1">LADAKH</div>
+            <div class="trending_right_itm_2">KERALA</div>
+            <div class="trending_right_itm_2_9">ANDAMAN</div>
+            <div class="trending_right_itm_4">HIMACHAL</div>
+            <div class="trending_right_itm_5">AGRA</div>
+            <div class="trending_right_itm_6">KASHMIR</div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="about">
+        <div class="container">
+            <div class="about_h">Tripsy.com</div>
+            <p class="about_b">
+                
+                Taj Mahal, Agra:  One of the Seven Wonders of the World, the Taj Mahal is an iconic symbol of love and a masterpiece of Mughal architecture. Built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, the white marble mausoleum is a UNESCO World Heritage Site. 
+                Jaipur, Rajasthan:  Known as the "Pink City," Jaipur is famous for its vibrant culture, majestic forts, and palaces. Hawa Mahal, City Palace, and Amber Fort are among the must-visit attractions. The city is a blend of history, tradition, and modernity. 
+                Varanasi, Uttar Pradesh:  Considered one of the oldest continually inhabited cities in the world, Varanasi is a sacred city on the banks of the Ganges River. It is known for its ghats, where religious ceremonies and rituals take place. The spiritual and cultural experience in Varanasi is unparalleled. 
+                Goa:  A popular beach destination, Goa is famous for its golden sandy beaches, vibrant nightlife, and Portuguese-influenced architecture. It offers a perfect blend of relaxation and adventure, with water sports, beach parties, and historical churches.
+                Kerala Backwaters:  The backwaters of Kerala are a network of interconnected rivers, lakes, and lagoons. A houseboat cruise through the backwaters allows visitors to experience the serene beauty of the landscape, lush greenery, and traditional village life.           
+            </p>
+            <p class="about_b">
+
+                Rishikesh and Haridwar, Uttarakhand:  These twin cities along the Ganges River are major pilgrimage sites. Rishikesh is known as the "Yoga Capital of the World," and Haridwar is famous for the Ganga Aarti, a mesmerizing ritual on the banks of the river. Khajuraho, Madhya Pradesh:  Khajuraho is renowned for its group of stunning temples adorned with intricate and erotic sculptures. These temples, built by the Chandela dynasty, are UNESCO World Heritage Sites and showcase exceptional architectural and artistic skills.
+                 Mysore, Karnataka:  Mysore is known for its royal heritage, exemplified by the opulent Mysore Palace. The city is also famous for its vibrant Dussehra celebrations, beautiful gardens like Brindavan Gardens, and the Chamundi Hills.
+                 Amritsar, Punjab:  Amritsar is home to the Golden Temple (Harmandir Sahib), the holiest shrine in Sikhism. The temple's golden facade and the spiritual atmosphere attract millions of visitors. The Wagah Border ceremony is another popular attraction. 
+                 Leh-Ladakh, Jammu and Kashmir:  Nestled in the Himalayas, Leh-Ladakh is known for its breathtaking landscapes, high mountain passes, and Tibetan Buddhist monasteries. It offers a unique blend of adventure, tranquility, and cultural richness.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <span class="caption">© 2023 <a href="/">Tripsy.com</a> All rights reserved.</span>
+            <p>The content and images used on this site are copyright protected and copyrights vests with
+                the respective
+                owners. The usage of the content and images on this website is intended to promote the works
+                and no
+                endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by
+                law.</p>
+        </div>
+    </div>
+</body>
+
+</html>
